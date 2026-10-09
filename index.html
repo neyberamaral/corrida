@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090c12">
+  <title>APEX//DRIVE — Street Racing</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="fundo-grade"></div>
+  <main class="aplicativo">
+    <header class="barra-superior">
+      <a class="marca" href="#" aria-label="Apex Drive início">
+        <span class="simbolo-marca"><i></i><i></i><i></i></span>
+        <span class="marca-texto">APEX<span>//</span>DRIVE<small>STREET RACING CLUB</small></span>
+      </a>
+      <nav class="navegacao">
+        <a class="ativo" href="#garagem">GARAGEM</a>
+        <a href="#corrida">CORRIDA</a>
+        <a href="#estatisticas">ESTATÍSTICAS</a>
+      </nav>
+      <div class="perfil">
+        <span class="status-online"></span><span>PILOTO <b>01</b></span>
+        <div class="avatar">N</div>
+      </div>
+    </header>
+
+    <section class="hero" id="garagem">
+      <div class="hero-conteudo">
+        <div class="linha-etiqueta"><span class="ponto"></span> TEMPORADA 04 <span class="linha"></span> CIRCUITO URBANO</div>
+        <h1>OWN<br>THE <span>NIGHT.</span></h1>
+        <p class="hero-descricao">A cidade não espera. Ajuste sua máquina, entre na pista e prove que você nasceu para liderar.</p>
+        <div class="hero-acoes">
+          <button class="botao-primario" id="ir-corrida"> <span>▶</span> INICIAR CORRIDA <b>↗</b></button>
+          <div class="recorde-resumo"><span>SEU MELHOR</span><strong id="recorde-resumo">000000</strong><small>PTS</small></div>
+        </div>
+        <div class="hero-tags"><span>01 <b>ARCADE RACING</b></span><span>02 <b>SEM INSTALAÇÃO</b></span><span>03 <b>JOGUE NO NAVEGADOR</b></span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="halo halo-um"></div><div class="halo halo-dois"></div>
+        <div class="vertical-label">APEX MOTORSPORTS / 2026</div>
+        <div class="visual-tag tag-top"><span>ENGINE</span><b>V8 / TURBO</b></div>
+        <div class="visual-tag tag-bottom"><span>MAX SPEED</span><b>328 <small>KM/H</small></b></div>
+        <svg class="carro-hero" viewBox="0 0 720 360" role="img" aria-label="Ilustração vetorial de um carro esportivo moderno">
+          <defs>
+            <linearGradient id="lataria" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffcf69"/><stop offset=".45" stop-color="#e97a28"/><stop offset="1" stop-color="#8e2d19"/></linearGradient>
+            <linearGradient id="vidro" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#344b5a"/><stop offset="1" stop-color="#0b1119"/></linearGradient>
+            <linearGradient id="brilho" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ffedb0"/><stop offset="1" stop-color="#ff7b39"/></linearGradient>
+          </defs>
+          <ellipse cx="380" cy="290" rx="290" ry="30" fill="#ff762a" opacity=".17"/>
+          <path d="M80 244 L120 211 L222 185 L300 117 Q322 96 370 91 L486 99 Q523 106 556 152 L626 188 L669 225 L654 259 L584 275 L143 276 L88 267Z" fill="#111820" stroke="#e8a35b" stroke-width="2"/>
+          <path d="M140 216 L234 190 L309 126 Q329 108 369 105 L482 112 Q512 120 542 159 L469 166 L279 169 L216 196Z" fill="url(#lataria)"/>
+          <path d="M319 127 Q336 113 369 112 L413 115 L421 159 L277 162Z" fill="url(#vidro)" stroke="#5b6a70" stroke-width="2"/>
+          <path d="M428 116 L479 120 Q502 130 525 158 L432 158Z" fill="url(#vidro)" stroke="#5b6a70" stroke-width="2"/>
+          <path d="M123 217 L215 198 L277 174 L472 171 L543 165 L605 193 L550 206 L216 224Z" fill="url(#lataria)"/>
+          <path d="M91 240 L155 220 L229 228 L211 250 L112 256Z" fill="#202932"/>
+          <path d="M539 174 L605 194 L642 222 L580 222 L548 205Z" fill="#242b32"/>
+          <path d="M572 225 L650 228 L642 245 L570 251Z" fill="#ff572f"/>
+          <path d="M572 228 L634 231" stroke="#ffb18a" stroke-width="4"/>
+          <path d="M107 239 L151 226 L188 231 L170 244 L109 249Z" fill="#f5f3d7"/>
+          <path d="M280 171 L472 169 L540 165 L550 178 L481 190 L251 198Z" fill="#c85420"/>
+          <path d="M225 222 L550 205 L575 223 L553 235 L223 251 L188 240Z" fill="#181f26"/>
+          <path d="M240 225 L553 211" stroke="#ffbd68" stroke-width="2" opacity=".85"/>
+          <path d="M318 197 L427 192 L413 203 L308 209Z" fill="#111820"/>
+          <path d="M334 203 L405 200" stroke="#8e9698" stroke-width="2"/>
+          <path d="M183 254 L576 249 L565 269 L193 272Z" fill="#090d12"/>
+          <path d="M223 267 L542 263" stroke="#ec8d39" stroke-width="3"/>
+          <g><ellipse cx="237" cy="263" rx="43" ry="53" fill="#090d11"/><ellipse cx="237" cy="263" rx="25" ry="35" fill="#4e5960"/><ellipse cx="237" cy="263" rx="13" ry="21" fill="#121820"/><path d="M237 232 L237 294 M215 245 L259 281 M215 281 L259 245" stroke="#9da8ad" stroke-width="4"/></g>
+          <g><ellipse cx="531" cy="250" rx="39" ry="48" fill="#090d11"/><ellipse cx="531" cy="250" rx="23" ry="32" fill="#4e5960"/><ellipse cx="531" cy="250" rx="12" ry="19" fill="#121820"/><path d="M531 222 L531 278 M511 232 L551 268 M511 268 L551 232" stroke="#9da8ad" stroke-width="4"/></g>
+          <path d="M305 117 L320 104 L390 101" stroke="#ffe0a0" stroke-width="3" fill="none"/>
+          <path d="M119 213 L223 185 L296 121" stroke="#ffd28a" stroke-width="3" fill="none"/>
+          <path d="M290 285 L510 285" stroke="#ff7029" stroke-width="3" opacity=".6"/>
+        </svg>
+        <div class="placa-carro">AD<span> / 04</span></div>
+        <div class="visual-legenda">DESIGNED FOR THE<br><strong>LIMIT.</strong></div>
+      </div>
+    </section>
+
+    <section class="garagem">
+      <div class="secao-cabecalho">
+        <div><span class="sobretitulo">SUA COLEÇÃO</span><h2>ESCOLHA SUA <span>MÁQUINA.</span></h2></div>
+        <div class="contador-carros"><strong id="contador-carros">01</strong> / 03</div>
+      </div>
+      <div class="cartoes-carros" id="cartoes-carros">
+        <button class="cartao-carro selecionado" data-carro="0">
+          <span class="carro-numero">01 / STREET</span>
+          <span class="carro-ilustracao carro-laranja"><i></i><b></b></span>
+          <span class="carro-nome">VORTEX GT</span><span class="carro-tipo">RWD · STREET SPEC</span>
+          <span class="carro-dados"><span>VELOCIDADE <b>★★★★☆</b></span><span>CONTROLE <b>★★★☆☆</b></span></span>
+          <span class="selecionar">SELECIONADO <i>✓</i></span>
+        </button>
+        <button class="cartao-carro" data-carro="1">
+          <span class="carro-numero">02 / SPORT</span>
+          <span class="carro-ilustracao carro-vermelho"><i></i><b></b></span>
+          <span class="carro-nome">CRIMSON R</span><span class="carro-tipo">AWD · TRACK SPEC</span>
+          <span class="carro-dados"><span>VELOCIDADE <b>★★★★★</b></span><span>CONTROLE <b>★★★☆☆</b></span></span>
+          <span class="selecionar">SELECIONAR <i>↗</i></span>
+        </button>
+        <button class="cartao-carro" data-carro="2">
+          <span class="carro-numero">03 / HYPER</span>
+          <span class="carro-ilustracao carro-azul"><i></i><b></b></span>
+          <span class="carro-nome">SKYLINE X</span><span class="carro-tipo">MR · HYPER SPEC</span>
+          <span class="carro-dados"><span>VELOCIDADE <b>★★★★★</b></span><span>CONTROLE <b>★★★★☆</b></span></span>
+          <span class="selecionar">SELECIONAR <i>↗</i></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="corrida-secao" id="corrida">
+      <div class="secao-cabecalho corrida-titulo">
+        <div><span class="sobretitulo">EVENTO AO VIVO</span><h2>URBAN <span>RUSH.</span></h2></div>
+        <div class="tag-evento"><i></i> CIRCUITO NOTURNO</div>
+      </div>
+      <div class="painel-corrida">
+        <div class="painel-canvas">
+          <div class="canvas-topo"><span><i></i> THREE.JS · REAL-TIME 3D</span><span id="estado">AGUARDANDO PILOTO</span></div>
+          <div class="area-canvas">
+            <canvas id="jogo" width="480" height="680" aria-label="Jogo de corrida de carros"></canvas>
+            <div id="sobreposicao" class="sobreposicao">
+              <div class="sinal-play">▶</div><strong>PRONTO PARA<br><span>A CORRIDA?</span></strong><p>ESCOLHA SUA MÁQUINA E INICIE O EVENTO.</p>
+            </div>
+            <div id="sobre-pausa" class="sobreposicao escondido"><strong>PAUSADO</strong><p>Respire. A próxima curva é sua.</p><button id="continuar">CONTINUAR ▶</button></div>
+            <div id="sobre-fim" class="sobreposicao escondido"><strong>FIM DE <span>PROVA.</span></strong><p>PONTUAÇÃO FINAL <b id="pontos-finais">000000</b></p><button id="tentar">TENTAR NOVAMENTE ↗</button></div>
+          </div>
+          <div class="hud-corrida">
+            <div><span>PONTUAÇÃO</span><strong id="pontos">000000</strong></div>
+            <div><span>VELOCIDADE</span><strong><b id="velocidade">000</b><small> KM/H</small></strong></div>
+            <div class="hud-nitro"><span>NITRO <b id="nitro-texto">100%</b></span><div><i id="barra-nitro"></i></div></div>
+          </div>
+        </div>
+        <aside class="painel-lateral">
+          <div class="lateral-bloco">
+            <span class="sobretitulo">CONTROLES</span>
+            <div class="controle-linha"><span>ACELERAR</span><b>W / ↑</b></div>
+            <div class="controle-linha"><span>FREAR</span><b>S / ↓</b></div>
+            <div class="controle-linha"><span>VIRAR À ESQUERDA / DIREITA</span><b>A / D · ← / →</b></div>
+            <div class="controle-linha"><span>NITRO</span><b>ESPAÇO</b></div>
+            <div class="controle-linha"><span>DRIFT</span><b>SHIFT</b></div>
+            <div class="controle-linha"><span>PAUSAR</span><b>ESC</b></div>
+          </div>
+          <div class="lateral-bloco">
+            <span class="sobretitulo">CONFIGURAÇÃO</span>
+            <label class="rotulo-select" for="dificuldade">NÍVEL DE PILOTAGEM</label>
+            <select id="dificuldade">
+              <option value="casual">Casual</option>
+              <option value="arcade" selected>Arcade</option>
+              <option value="pro">Profissional</option>
+            </select>
+            <button class="botao-corrida" id="iniciar">▶ &nbsp; INICIAR CORRIDA <span>↗</span></button>
+            <button class="botao-secundario" id="reiniciar">REINICIAR PROVA</button>
+          </div>
+          <div class="lateral-bloco estatisticas" id="estatisticas">
+            <span class="sobretitulo">SEUS NÚMEROS</span>
+            <div><span>MELHOR PONTUAÇÃO</span><strong id="recorde">000000</strong></div>
+            <div><span>CRÉDITOS COLETADOS</span><strong id="creditos">000</strong></div>
+            <div><span>CARRO ATUAL</span><strong id="carro-atual">VORTEX GT</strong></div>
+          </div>
+          <div class="nota-lateral"><span>✦</span> DICA: SEGURE W / ↑ PARA ACELERAR E USE O NITRO EM RETAS LIVRES.</div>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="rodape">
+      <a class="marca rodape-marca" href="#"><span class="simbolo-marca"><i></i><i></i><i></i></span><span class="marca-texto">APEX<span>//</span>DRIVE<small>STREET RACING CLUB</small></span></a>
+      <span>BUILT FOR THE THRILL. <b>© 2026 APEX DRIVE</b></span>
+      <span class="rodape-tecnologia">HTML <i>+</i> CSS <i>+</i> JS <i>+</i> WEBGL</span>
+    </footer>
+
+    <div class="controles-mobile">
+      <button id="mobile-esquerda" aria-label="Virar à esquerda">←</button>
+      <button id="mobile-frear" aria-label="Frear">▼</button>
+      <button id="mobile-nitro" aria-label="Nitro">NITRO</button>
+      <button id="mobile-acelerar" aria-label="Acelerar">▲</button>
+      <button id="mobile-direita" aria-label="Virar à direita">→</button>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="jogo.js"></script>
+</body>
+</html>
